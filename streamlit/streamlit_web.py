@@ -162,8 +162,8 @@ if uploaded_file is not None:
 
 
         # 基準グループとレッドライングループの読み込み
-        df_base_group = pd.read_csv('./Datasets/Input_data/df_base_group.csv')
-        df_for_red = pd.read_csv('./Datasets/Input_data/df_for_red.csv')
+        df_base_group = pd.read_csv('./streamlit/Datasets/Input_data/df_base_group.csv')
+        df_for_red = pd.read_csv('./streamlit/Datasets/Input_data/df_for_red.csv')
 
         df_base_group_stat = df_base_group.loc[:, 'self_control':'social_cohesion'].describe()
         df_for_red_stat = df_for_red.loc[:, 'self_control':'social_cohesion'].describe()
